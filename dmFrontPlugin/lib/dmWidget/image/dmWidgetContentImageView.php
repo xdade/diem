@@ -16,11 +16,6 @@ class dmWidgetContentImageView extends dmWidgetContentBaseMediaView
     
     if ($vars['mediaTag'])
     {
-      if ($vars['legend'])
-      {
-        $vars['mediaTag']->alt($vars['legend']);
-      }
-      
       $vars['mediaTag']->method($vars['method']);
   
       if ($vars['method'] === 'fit')
